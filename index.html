@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare of Chile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">HealthCare</a>
+        <ul>
+            <li><a href="index.html" class="active">Enviroment</a></li>
+            <li><a href="gov.html">Government</a></li>
+            <li><a href="indv.html">Individuals</a></li>
+            <li><a href="com.html">Company</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text">HealthCare of Chile</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#sec" id="btn">Enviroment Of Chile</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Impact On Chile's enviroment Due to HealthCare field </h2>
+        <p class="white">
+            <div class="heads">Background</div><br>
+            <div class="txt">
+            The Valdivia Health Service (Servicio de Salud de Valdivia in Spanish) is a public health network in the Los Ríos region of the<br>
+             south of Chile. The service operates nine health facilities and tends to a population of over 400,000 people. In 2014, it<br> committed to reducing its environmental impact by joining the Global Green and Healthy Hospitals network.<br> <br></div>
+            
+            <div class="heads">The Challenge</div><br>
+            <div class="txt">
+            "The Valdivia Health Service has long been a national reference for cancer treatment, but ironically, we were contributing to the incidence of cancer by incinerating our waste. One of our first actions was to shut down our incinerator and adopt measures to sustainably manage our waste. That is when we recognized just how big an impact we could have by addressing the sustainability goals of the Global Green and Healthy Hospitals Agenda."
+            Pamela Andrade Alvarado, Coordinator of the Environmental Management Unit, Valdivia Health Service<br>
+            Climate and Health Solutions
+            As a first step in setting a green course, Valdivia hired environmental managers for each of its facilities, and created an Environmental Leadership Committee for the network. After the Ministry of Health in Chile published national guidelines for environmental management in the health sector in 2018, Valdivia developed its own Environmental Management Plan matching the guidelines.
+            Next it trained staff in all its facilities on the use of Health Care Without Harm's carbon footprint tool and led a system-wide calculation exercise to determine its emission baseline across all three scopes of emission.</div>
+        </div></p>
+
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn= document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left =value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left =value * -5 + 'px';
+            rocks.stlye.top= value * -12 + 'px';
+        })
+    </script>
+</body>
+</html>
